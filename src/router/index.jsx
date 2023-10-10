@@ -1,7 +1,7 @@
 // import React from 'react'
 import { Route, Routes } from "react-router-dom";
 import RootLayout from "../layout/RootLayout";
-import { Home, About } from "../pages";
+import { Home, About, Project } from "../pages";
 
 
 export default function RootRoutes() {
@@ -10,6 +10,7 @@ export default function RootRoutes() {
             <Route path="/" element={<RootLayout />}>
                 <Route index element={<Home />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/project" element={<Project /> } />
             </Route>
         </Routes>
     )
