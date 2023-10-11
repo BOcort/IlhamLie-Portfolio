@@ -20,7 +20,7 @@ export default function header() {
                     <NavLink to={"/project"} className="h-full w-36 flex items-center justify-center hover:bg-white hover:text-black rounded-sm active:w-1/2 active:h-3/4 active:duration-300 ease-out">
                         <h1 className=" text-lg">The Project</h1>
                     </NavLink>
-                    <NavLink to={"/"} className="h-full w-24 flex items-center justify-center hover:bg-white hover:text-black rounded-sm active:w-20 active:h-3/4 active:duration-300 ease-out">
+                    <NavLink to={"/contact"} className="h-full w-24 flex items-center justify-center hover:bg-white hover:text-black rounded-sm active:w-20 active:h-3/4 active:duration-300 ease-out">
                         <h1 className=" text-lg">Contact</h1>
                     </NavLink>
                 </div>
