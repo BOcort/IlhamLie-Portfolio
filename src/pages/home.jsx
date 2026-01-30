@@ -46,7 +46,8 @@ export default function home() {
         </div>
         <div id="Content" className=" md:w-1/2 md:mt-9 mx-auto">
           <div id="content-title" className="mx-auto">
-            <h2 className=" text-justfy font-sans text-8xl font-bold mb-5 max-md:text-6xl max-md:text-center">Hello This Is My Portfolio</h2>
+            <h3 className=" text-justfy font-sans text-8xl font-bold mb-5 max-md:text-6xl max-md:text-center">Hello This Is My Portfolio</h3>
+            <h2 className=" text-green-500 text-xs text-center max-md:text-xl">ILHAM TATAYO LIE </h2>
             <p className=" text-justify">{"Hello! My name is Ilham Tatayo Lie, and I'm passionately interested in pursuing a career as a full-stack developer. I successfully completed the Full Stack Development bootcamp at Harisenin.com, which has fueled my enthusiasm for this field. Currently, I am a dedicated student studying Informatics Engineering at the University of Papua, eager to enhance my skills and knowledge in the realm of technology"}</p>
           </div>
           <div id="content-file" className=" mt-12 max-md:flex max-md:justify-center">

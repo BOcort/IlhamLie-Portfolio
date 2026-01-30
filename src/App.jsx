@@ -1,11 +1,11 @@
-import RootRoutes from "./router"
+import FullPageScroll from "./components/FullPageScroll"
 
 
 function App() {
 
 
   return (
-    <RootRoutes />
+    <FullPageScroll />
   )
 }
 
