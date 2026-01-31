@@ -1,0 +1,35 @@
+[
+  {
+    "id": 1,
+    "position": "MIS Application Developer Intern",
+    "company": "PT Freeport Indonesia",
+    "duration": "1+ Year Internship",
+    "period": "2023 - 2024",
+    "location": "Papua, Indonesia",
+    "logo": "/about/Experiences/Freeport/logo-freeport.png",
+    "description": "Contributing to the development and maintenance of various applications based on Azure, Microsoft SQL, and C# using specialized framework.",
+    "projects": [
+      {
+        "name": "Call Center Application",
+        "description": "Developed and optimized a system connecting users with internal teams such as HR, LOD, engineers, and other divisions, ensuring more efficient communication and issue resolution."
+      },
+      {
+        "name": "Mining Workforce Management System",
+        "description": "Designed and implemented digital forms for workers assigned to mining operations, managing data on compliance, training certifications, and required documentation in accordance with company standards and safety regulations."
+      },
+      {
+        "name": "Global Application",
+        "description": "Contributed to the development and integration of systems linking PT Freeport Indonesia's operations with a mining company in Canada."
+      },
+      {
+        "name": "Database Management and Query Optimization",
+        "description": "Ensured system efficiency and reliability through query optimization, database performance tuning, and troubleshooting in Microsoft SQL Server Management Studio."
+      },
+      {
+        "name": "System Implementation and Maintenance",
+        "description": "Collaborated with the MIS Custom Apps team to develop new features, debug applications, and ensure the stability and security of systems used by various divisions within the company."
+      }
+    ],
+    "technologies": ["C#", "Azure", "Microsoft SQL", ".NET Framework"]
+  }
+]

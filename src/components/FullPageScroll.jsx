@@ -52,6 +52,11 @@ export default function FullPageScroll() {
     }
   ];
 
+  // Dispatch event when section changes to close any open modals
+  useEffect(() => {
+    window.dispatchEvent(new CustomEvent('sectionChange', { detail: { section: currentSection } }));
+  }, [currentSection]);
+
   useEffect(() => {
     const handleWheel = (e) => {
       if (isScrolling) return;

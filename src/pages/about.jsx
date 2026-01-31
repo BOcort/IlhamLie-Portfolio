@@ -1,129 +1,215 @@
 /* eslint-disable react/no-unescaped-entities */
-// import React from 'react'
+import { useState } from 'react';
+import skillsData from '../data/skill.json';
+import experiencesData from '../data/experience.json';
+import certificationsData from '../data/cerfication.json';
 
-export default function about() {
+export default function About() {
+  const [activeExperience, setActiveExperience] = useState(0);
+
   return (
     <div>
-      <div id="container" className="w-5/6 mx-auto ">
-        <div id="about-title" className=" text-center my-10">
-          <h2 className=" text-6xl font-bold font-sans italic">See My profile <span className=" text-red-500">!</span></h2>
+      <div id="container" className="w-5/6 mx-auto">
+        <div id="about-title" className="text-center my-10">
+          <h2 className="text-6xl font-bold font-sans italic">
+            See My profile <span className="text-red-500">!</span>
+          </h2>
         </div>
-        <div id="about-content" className="md:grid md:grid-cols-3 gap-5">
-          <div id="about-text" className=" text-xl text-justify font-mono md:col-span-2 max-md:hidden">
+
+        {/* About Content */}
+        <div id="about-content" className="md:grid md:grid-cols-3 gap-5 mb-20">
+          <div id="about-text" className="text-xl text-justify font-mono md:col-span-2 max-md:hidden">
             <p className="mb-5">
-              <span className=" text-red-500 font-semibold"> Welcome to my profile page! </span> I am a informatic engineering student who is extremely eager to enter the workforce as a full stack developer. Pursuing a degree in informatic aligns with my deep interest in creating innovative and impactful information technology solutions.
+              <span className="text-red-500 font-semibold"> Welcome to my profile page! </span> 
+              I am an informatic engineering student who is extremely eager to enter the workforce as a full stack developer. 
+              Pursuing a degree in informatic aligns with my deep interest in creating innovative and impactful information technology solutions.
             </p>
             <p className="mb-5">
-              Since high school, I have wholeheartedly delved into the realm of computer science. I actively participated in various informatics competitions during my high school years and even succeeded in winning competitions at the district level. My passion and dedication to the field of computer science have continued to grow over time.
+              Since high school, I have wholeheartedly delved into the realm of computer science. I actively participated in 
+              various informatics competitions during my high school years and even succeeded in winning competitions at the 
+              district level. My passion and dedication to the field of computer science have continued to grow over time.
             </p>
             <p className="mb-5">
-              In addition to formal education, I attended a full stack developer bootcamp on harisenin.com to further enhance my knowledge and skills in this field. I enjoy challenges and logic competitions, which help sharpen my analytical thinking and foster creative problem-solving in software development.
+              In addition to formal education, I attended a full stack developer bootcamp on harisenin.com to further enhance 
+              my knowledge and skills in this field. I enjoy challenges and logic competitions, which help sharpen my analytical 
+              thinking and foster creative problem-solving in software development.
             </p>
             <p className="mb-5">
-              Throughout my learning journey, I have taken various courses to improve my understanding of front-end, databases, and back-end development. I have also successfully worked on several projects where I played the role of a full stack developer, applying the knowledge and skills I have acquired.
+              Throughout my learning journey, I have taken various courses to improve my understanding of front-end, databases, 
+              and back-end development. I have also successfully worked on several projects where I played the role of a full 
+              stack developer, applying the knowledge and skills I have acquired.
             </p>
           </div>
-          <div id="about-picture" className=" md:col-span-1">
-            <div className="max-md:absolute max-md:top-1/3 max-sm: max-sm:flex max-sm:justify-center">
-              <div className=" bg-gray-700 w-64 h-64 absolute mt-3 ml-3 rounded-xl -z-50"></div>
-              <div className=" bg-white w-64 h-64 z-2 flex rounded-xl">
-                <img src="/image/profile-picture2.jpg" alt="" className=" items-center justify-center h-56 m-auto" />
+
+          <div id="about-picture" className="md:col-span-1">
+            <div className="relative max-md:flex max-md:justify-center max-md:mb-10">
+              <div className="bg-gray-700 w-64 h-64 absolute top-3 left-3 rounded-xl -z-10 max-md:hidden"></div>
+              <div className="bg-white w-64 h-64 relative flex rounded-xl shadow-xl hover:scale-105 transition-transform duration-300">
+                <img 
+                  src="/image/IMG_4189_YB_-removebg-preview.png" 
+                  alt="Profile" 
+                  className="h-56 m-auto object-cover" 
+                />
               </div>
             </div>
-            <div className="max-md:float-right max-md:mt-20 max-sm:">
-              <div id="about-university" className=" md:mt-10 h-24 flex w-72 hover:bg-white hover:text-black duration-300 rounded-xl">
-                <img src="/image/logo-unipa.webp" alt="" className=" h-5/6 m-auto ml-4" />
-                <p className="my-auto ml-4 text-2xl font-bold font-mono">Bachelor <span className=" text-sm">Informatic Engineering</span></p>
+
+            <div className="mt-10 max-md:flex max-md:flex-col max-md:items-center max-md:gap-4">
+              <div className="h-24 flex w-72 hover:bg-white hover:text-black duration-300 rounded-xl border border-gray-700 p-2">
+                <img src="/image/logo-unipa.webp" alt="UNIPA" className="h-full object-contain ml-2" />
+                <p className="my-auto ml-4 text-xl font-bold font-mono">
+                  Bachelor <span className="text-sm block">Informatic Engineering</span>
+                </p>
               </div>
-              <div id="about-university" className="mt-5 h-24 flex w-72 hover:bg-white hover:text-black duration-300 rounded-xl">
-                <p className="m-auto mr-8 text-xl font-bold font-mono text-right">Bootcamp <span className=" text-sm">Fullstack Developer</span></p>
-                <img src="/image/logo-harisenin.jpeg" alt="" className=" h-5/6 mr-4 m-auto rounded-full" />
+              <div className="mt-5 h-24 flex w-72 hover:bg-white hover:text-black duration-300 rounded-xl border border-gray-700 p-2">
+                <p className="my-auto mr-4 text-xl font-bold font-mono text-right">
+                  Bootcamp <span className="text-sm block">Fullstack Developer</span>
+                </p>
+                <img src="/image/logo-harisenin.jpeg" alt="HariSenin" className="h-full object-contain rounded-full mr-2" />
               </div>
             </div>
           </div>
         </div>
-        <div id="about-skill" className="max-md:mt-96">
-          <div id="Skill" className="mb-5">
-            <h3 className="text-4xl font-bold text-center my-5">Skill</h3>
-            <div className="grid grid-rows-4">
-              <div className=" row-span-1 md:w-1/2">
-                <div className="md:w-full md:float-left">
-                  <h4 className=" font-semibold text-2xl mb-4 max-md:text-center">Front end Developer</h4>
-                  <hr />
-                  <div id="frontend" className="flex mt-4 gap-5 max-md:justify-center">
-                    <p className="  hover:bg-white hover:text-black rounded-lg p-2">Html & CSS</p>
-                    <p className="  hover:bg-white hover:text-black rounded-lg p-2">Javascript</p>
-                    <p className="  hover:bg-white hover:text-black rounded-lg p-2">React JS</p>
-                    <p className="  hover:bg-white hover:text-black rounded-lg p-2">Vite JS</p>
+
+        {/* Experience Section */}
+        <div id="experience-section" className="mb-20">
+          <h3 className="text-5xl font-bold text-center my-10">
+            Professional <span className="text-blue-500">Experience</span>
+          </h3>
+          
+          {experiencesData.map((exp, index) => (
+            <div 
+              key={exp.id}
+              className="relative border-l-4 border-blue-500 pl-8 mb-10 hover:border-blue-400 transition-all duration-300"
+            >
+              <div className="absolute -left-3 top-0 w-5 h-5 rounded-full bg-blue-500 animate-pulse"></div>
+              
+              <div className="bg-gray-900/50 rounded-xl p-6 backdrop-blur-sm hover:bg-gray-900/70 transition-all duration-300">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="flex-1">
+                    <h4 className="text-2xl font-bold text-blue-400">{exp.position}</h4>
+                    <p className="text-xl text-gray-300">{exp.company}</p>
+                    <p className="text-sm text-gray-400">{exp.duration} • {exp.period}</p>
                   </div>
                 </div>
-              </div>
-              <div className=" row-span-1">
-                <div className="md:w-1/2 md:float-right max-md:w-full">
-                  <h4 className=" font-semibold text-2xl mb-4 text-right max-md:text-center">Back end Developer</h4>
-                  <hr />
-                  <div id="backend" className="flex mt-4 gap-5 md:float-right max-md:justify-center">
-                    <p className="  hover:bg-white hover:text-black rounded-lg p-2">NodeJS</p>
-                  </div>
+
+                <p className="text-gray-300 mb-4 italic">{exp.description}</p>
+
+                {/* Technologies */}
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {exp.technologies.map((tech, idx) => (
+                    <span 
+                      key={idx}
+                      className="px-3 py-1 bg-blue-500/20 text-blue-300 rounded-full text-sm border border-blue-500/30"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
-              </div>
-              <div className=" row-span-1 md:w-1/2 ">
-                <div className="md:float-left w-full ">
-                  <h4 className=" font-semibold text-2xl mb-4 max-md:text-center">Database</h4>
-                  <hr />
-                  <div id="database" className="flex mt-4 gap-5 max-md:justify-center">
-                    <p className="  hover:bg-white hover:text-black rounded-lg p-2">Mysql</p>
-                    <p className="  hover:bg-white hover:text-black rounded-lg p-2">PostgresSQL</p>
-                  </div>
-                </div>
-              </div>
-              <div className="row-span-1">
-                <div className="w-full">
-                  <h4 className=" font-semibold text-2xl mb-4 text-center">Another</h4>
-                  <hr />
-                  <div id="another" className="flex mt-4 gap-5 justify-center">
-                    <p className="  hover:bg-white hover:text-black rounded-lg p-2">Java</p>
-                    <p className="  hover:bg-white hover:text-black rounded-lg p-2">Python</p>
-                    <p className="  hover:bg-white hover:text-black rounded-lg p-2">Pascal</p>
-                    <p className="  hover:bg-white hover:text-black rounded-lg p-2">C</p>
-                  </div>
+
+                {/* Projects */}
+                <div className="mt-6">
+                  <button
+                    onClick={() => setActiveExperience(activeExperience === index ? -1 : index)}
+                    className="text-blue-400 hover:text-blue-300 font-semibold mb-4 flex items-center gap-2"
+                  >
+                    {activeExperience === index ? '▼' : '▶'} View Key Projects & Contributions
+                  </button>
+                  
+                  {activeExperience === index && (
+                    <div className="space-y-4 animate-fadeIn">
+                      {exp.projects.map((project, idx) => (
+                        <div 
+                          key={idx}
+                          className="pl-4 border-l-2 border-gray-700 hover:border-blue-500 transition-colors duration-300"
+                        >
+                          <h5 className="font-semibold text-lg text-white">{project.name}</h5>
+                          <p className="text-gray-400 text-sm">{project.description}</p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
+          ))}
+        </div>
+
+        {/* Skills Section */}
+        <div id="about-skill" className="mb-20">
+          <h3 className="text-5xl font-bold text-center my-10">
+            Technical <span className="text-green-500">Skills</span>
+          </h3>
+          
+          <div className="grid md:grid-cols-2 gap-8">
+            {Object.entries(skillsData).map(([key, skillCategory]) => (
+              <div 
+                key={key}
+                className="bg-gray-900/50 rounded-xl p-6 backdrop-blur-sm hover:bg-gray-900/70 transition-all duration-300 hover:scale-105"
+              >
+                <h4 className="font-semibold text-2xl mb-4 text-center bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
+                  {skillCategory.title}
+                </h4>
+                <hr className="border-gray-700 mb-4" />
+                <div className="flex flex-wrap gap-3 justify-center">
+                  {skillCategory.items.map((skill, idx) => (
+                    <span
+                      key={idx}
+                      className="px-4 py-2 bg-gray-800 hover:bg-white hover:text-black rounded-lg transition-all duration-300 cursor-pointer text-sm font-medium transform hover:scale-110"
+                    >
+                      {skill}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
-          <div id="Certificate">
-            <h3 className="text-4xl font-bold text-center my-5">Certificate</h3>
-            <div className=" max-md:flex max-md:justify-center" id="web-developer">
-              <div className="md:flex justify-center gap-5">
-                <a href="https://progate.com/path_certificate/c7900315rs2f3t">
-                  <div id="Progate" className="w-96 hover:bg-white hover:text-black rounded-xl duration-200 max-md:mb-5">
-                    <div className="w-11/12 flex mx-auto ">
-                      <img src="/image/logo-progate.jpeg" alt="" className=" h-24 rounded-full mr-5" />
-                      <div className="my-auto">
-                        <h3 className=" text-xl font-medium">Front-end Developer</h3>
-                        <p className=" text-lg">December 2022 - Maret 2023</p>
-                        <p className=" text-xs">Skill : Html, Css, JavaScript and React</p>
-                      </div>
+        </div>
+
+        {/* Certificates Section */}
+        <div id="Certificate" className="mb-20">
+          <h3 className="text-5xl font-bold text-center my-10">
+            Certifications & <span className="text-yellow-500">Achievements</span>
+          </h3>
+          
+          <div className="grid md:grid-cols-2 gap-6">
+            {certificationsData.map((cert) => (
+              <a
+                key={cert.id}
+                href={cert.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group"
+              >
+                <div className="relative overflow-hidden rounded-xl bg-gray-900/50 hover:bg-gray-900/70 transition-all duration-300 h-full">
+                  {/* Hover Effect */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-yellow-500/10 to-orange-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  
+                  <div className="relative p-6 flex items-center gap-4">
+                    <div className="flex-shrink-0">
+                      <img 
+                        src={cert.logo} 
+                        alt={cert.issuer}
+                        className="h-20 w-20 object-contain rounded-full bg-white p-2 group-hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-xl font-medium group-hover:text-yellow-400 transition-colors duration-300">
+                        {cert.title}
+                      </h3>
+                      <p className="text-lg text-gray-300">{cert.issuer}</p>
+                      <p className="text-sm text-gray-400">{cert.date}</p>
+                      <p className="text-xs text-gray-500 mt-1">Skills: {cert.skills}</p>
+                    </div>
+                    <div className="text-yellow-500 text-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      →
                     </div>
                   </div>
-                </a>
-                <a href="https://codingstudio.id/certificate/75C12499A5-75B547304D-75B546E420/">
-                  <div id="Coding Studio" className="w-96 hover:bg-white hover:text-black rounded-xl duration-200">
-                    <div className="w-11/12 flex mx-auto">
-                      <img src="/image/logo-codingStudio.png" alt="" className=" h-24 rounded-full bg-white mr-5" />
-                      <div className="my-auto">
-                        <h3 className=" text-xl font-medium">Front-end Developer</h3>
-                        <p className=" text-lg">June 2023</p>
-                        <p className=" text-xs">Skill : Html, Css and JavaScript</p>
-                      </div>
-                    </div>
-                  </div>
-                </a>
-              </div>
-            </div>
+                </div>
+              </a>
+            ))}
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

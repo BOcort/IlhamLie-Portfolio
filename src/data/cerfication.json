@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Front-end Developer",
+    "issuer": "Progate",
+    "date": "December 2022 - March 2023",
+    "skills": "HTML, CSS, JavaScript, and React",
+    "logo": "/image/logo-progate.jpeg",
+    "link": "https://progate.com/path_certificate/c7900315rs2f3t"
+  },
+  {
+    "id": 2,
+    "title": "Front-end Developer",
+    "issuer": "Coding Studio",
+    "date": "June 2023",
+    "skills": "HTML, CSS, and JavaScript",
+    "logo": "/image/logo-codingStudio.png",
+    "link": "https://codingstudio.id/certificate/75C12499A5-75B547304D-75B546E420/"
+  },
+  {
+    "id": 3,
+    "title": "Bootcamp Full-Stack Developer Batch 7",
+    "issuer": "HariSenin",
+    "date": "October 2023",
+    "skills": "Full Stack Development",
+    "logo": "/image/logo-harisenin.jpeg",
+    "link": "https://drive.google.com/file/d/1-w4UpshLkJRNCBpNe5UUj5yzT1WsMlCP/view?usp=drivesdk"
+  },
+  {
+    "id": 4,
+    "title": "1st Place Komatkom",
+    "issuer": "Universitas Cendrawasih",
+    "date": "2022",
+    "skills": "Programming Competition",
+    "logo": "/image/logo-uncen.png",
+    "link": "https://drive.google.com/file/d/1B4RXQDLY-HgbgeffKcQZGSxtdZgzwoZU/view?usp=sharing"
+  }
+]

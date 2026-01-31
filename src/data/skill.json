@@ -1,0 +1,48 @@
+{
+  "programmingLanguages": {
+    "title": "Programming Languages",
+    "items": [
+      "C#",
+      "JavaScript",
+      "PHP",
+      "Python",
+      "C",
+      "Java",
+      "Pascal"
+    ]
+  },
+  "frontend": {
+    "title": "Front-end Developer",
+    "items": [
+      "HTML & CSS",
+      "JavaScript",
+      "React",
+      "React-Native"
+    ]
+  },
+  "backend": {
+    "title": "Back-end Developer",
+    "items": [
+      "Node.js",
+      "Express",
+      "Laravel"
+    ]
+  },
+  "database": {
+    "title": "Database",
+    "items": [
+      "MongoDB",
+      "Firebase",
+      "MySQL",
+      "PostgreSQL",
+      "Microsoft SQL"
+    ]
+  },
+  "machineLearning": {
+    "title": "Machine Learning",
+    "items": [
+      "Scikit-learn",
+      "TensorFlow"
+    ]
+  }
+}

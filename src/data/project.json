@@ -1,0 +1,150 @@
+[
+  {
+    "id": 1,
+    "title": "ClearSky",
+    "category": "Machine Learning",
+    "type": "Research Project",
+    "date": "2025",
+    "thumbnail": "/Project/ClearSky/ResultEnsemble.png",
+    "gallery": [
+      "/Project/ClearSky/ResultEnsemble.png",
+      "/Project/ClearSky/CNNTraining.png",
+      "/Project/ClearSky/FCBiLSTMResult.png"
+    ],
+    "logo": null,
+    "shortDescription": "Hybrid ensemble framework for short-term weather forecasting using visual cloud imagery and numerical meteorological data.",
+    "description": "This study successfully developed a hybrid ensemble framework for short-term weather forecasting in Manokwari by integrating visual cloud imagery and numerical meteorological data. The implementation of a time-based adaptive weighting mechanism (Alpha-Blending) effectively resolved the performance degradation typically caused by diurnal lighting variations.",
+    "fullDescription": "Experimental results demonstrate that the proposed conditional ensemble achieves superior predictive performance, with an overall accuracy of 92.49% and a macro F1-score of 0.91. This approach significantly outperforms standalone models by maintaining predictive continuity during nighttime periods and resolving visual ambiguities between 'Cloudy' and 'Clear' states that often plague vision-only systems. These findings support previous theories regarding the necessity of multimodal data fusion to navigate atmospheric volatility in maritime regions. Ultimately, this research advances computational meteorology by providing a practical, high-accuracy early warning solution that is responsive to diurnal cycle variations.",
+    "technologies": ["Python", "TensorFlow", "Scikit-learn", "Computer Vision", "Machine Learning", "Data Analytics"],
+    "features": [
+      "92.49% overall accuracy",
+      "Macro F1-score of 0.91",
+      "Time-based adaptive weighting (Alpha-Blending)",
+      "Multimodal data fusion",
+      "Diurnal cycle responsive"
+    ],
+    "links": {
+      "github": null,
+      "demo": null
+    }
+  },
+  {
+    "id": 2,
+    "title": "Event Rise",
+    "category": "Full Stack",
+    "type": "Web Application",
+    "date": "May 2023 - Nov 2023",
+    "thumbnail": "/Project/EventManagent/1693021428927.jpg",
+    "gallery": [
+      "/Project/EventManagent/1693021428927.jpg"
+    ],
+    "logo": "/Project/EventManagent/riserLogo.png",
+    "shortDescription": "Efficient event management system developed collaboratively at Harisenin.com bootcamp.",
+    "description": "As a team member, collaborated on the design and development of an efficient event management system at Harisenin.com. This project involved tasks such as requirement analysis, user interface design, front-end and back-end development, integration with third-party services, as well as testing and maintenance.",
+    "fullDescription": "A comprehensive event management platform that streamlines event organization from planning to execution. Built with modern web technologies, the system features user authentication, event creation and management, ticket booking, participant tracking, and real-time notifications. The application uses Redux for state management and Sequelize ORM for database operations, ensuring scalability and maintainability.",
+    "technologies": ["React.js", "Redux.js", "Node.js", "Express.js", "Sequelize.js", "SQL", "Tailwind CSS", "Vite", "Git"],
+    "features": [
+      "Event creation and management",
+      "User authentication and authorization",
+      "Ticket booking system",
+      "Participant tracking",
+      "Integration with third-party services",
+      "Real-time notifications"
+    ],
+    "links": {
+      "github": null,
+      "demo": null
+    }
+  },
+  {
+    "id": 3,
+    "title": "Kampung Ramiki Website",
+    "category": "Full Stack",
+    "type": "Web Application",
+    "date": "Jun 2025 - Aug 2025",
+    "thumbnail": "/Project/KKNRamiki/Kampung-Ramiki-UMKM-Koperasi-Potensi-Lokal-01-31-2026_11_41_AM.png",
+    "gallery": [
+      "/Project/KKNRamiki/Kampung-Ramiki-UMKM-Koperasi-Potensi-Lokal-01-31-2026_11_41_AM.png",
+      "/Project/KKNRamiki/Data-Masyarakat-Kampung-Ramiki-Statistik-Demografi-01-31-2026_11_41_AM.png",
+      "/Project/KKNRamiki/Daftar-Artikel-Kampung-Ramiki-UMKM-Koperasi-01-31-2026_11_43_AM.png"
+    ],
+    "logo": "/Project/KKNRamiki/logoWondama.png",
+    "shortDescription": "Digital platform for Kampung Ramiki to showcase local businesses, cooperatives, and village potential.",
+    "description": "Website ini dibuat sebagai sarana digitalisasi UMKM, koperasi, dan potensi lokal Kampung Ramiki. Tujuannya adalah memperkenalkan kampung secara lebih luas melalui media digital, mempermudah akses informasi masyarakat, serta mendukung transparansi data yang dapat digunakan untuk pembangunan berkelanjutan.",
+    "fullDescription": "A comprehensive village website that serves as a digital hub for Kampung Ramiki, showcasing local businesses, cooperatives, and community potential. The platform features demographic data visualization, tourism information, news articles, and contact directories. Built with React and integrated with Google Maps API for location services.",
+    "technologies": ["React.js", "Google Maps API", "Responsive Design", "Data Visualization"],
+    "features": [
+      "Home - Overview and purpose",
+      "About - Village information, staff structure, vision & mission",
+      "Articles - News and updates",
+      "Contact - Official contact directory",
+      "Community Data - Demographics (age, ethnicity, religion, gender)",
+      "Potential - Tourism, SMEs, and cooperatives information"
+    ],
+    "links": {
+      "github": null,
+      "demo": "https://www.kampungramiki.com"
+    }
+  },
+  {
+    "id": 4,
+    "title": "KoranWeb",
+    "category": "Full Stack",
+    "type": "Web Application",
+    "date": "Jun 2025",
+    "thumbnail": "/Project/Koran/1750353500874.jpg",
+    "gallery": [
+      "/Project/Koran/1750353500874.jpg"
+    ],
+    "logo": null,
+    "shortDescription": "News article platform with admin CRUD, JWT authentication, and image upload functionality.",
+    "description": "KoranWeb adalah aplikasi web untuk membaca dan mengelola artikel berita. Project ini dibangun menggunakan React (Vite) untuk frontend, Express.js untuk backend, dan MongoDB sebagai database.",
+    "fullDescription": "A modern news portal featuring article management system with full CRUD operations for administrators. The platform includes JWT-based authentication with cookie storage, drag-and-drop image uploads, article search and filtering capabilities. Built with MERN stack for optimal performance and scalability.",
+    "technologies": ["React.js", "Vite", "Express.js", "MongoDB", "Tailwind CSS", "JWT", "REST API"],
+    "features": [
+      "Modern and responsive article reading interface",
+      "Admin CRUD operations for articles",
+      "Drag & drop image upload",
+      "JWT authentication with cookies",
+      "Article search and filtering",
+      "REST API backend",
+      "Role-based access (admin/user)"
+    ],
+    "links": {
+      "github": "https://github.com/BOcort/koranFront",
+      "githubBackend": "https://github.com/BOcort/koranBack",
+      "demo": null
+    }
+  },
+  {
+    "id": 5,
+    "title": "MoTani",
+    "category": "Mobile App",
+    "type": "Mobile Application",
+    "date": "Dec 2025 - Jan 2026",
+    "thumbnail": "/Project/Motani/Screenshot_20251209_085544_MoTani.jpg",
+    "gallery": [
+      "/Project/Motani/Screenshot_20251209_085544_MoTani.jpg",
+      "/Project/Motani/Screenshot_20251209_085614_MoTani.jpg",
+      "/Project/Motani/Screenshot_20251209_085650_MoTani.jpg"
+    ],
+    "logo": "/Project/Motani/LogoMotani.png",
+    "shortDescription": "Digital agricultural management solution for modern farming with geospatial integration.",
+    "description": "The MoTani application was developed as a digital solution for modern agricultural management to assist farmers in monitoring and managing farming activities efficiently. Its goal is to digitize land recording processes, facilitate the inventory management of tools and materials, and provide transparent harvest data visualization.",
+    "fullDescription": "A comprehensive mobile application designed to modernize agricultural management. The app integrates geospatial mapping for land management, inventory tracking for farming tools and supplies, harvest data visualization with interactive charts, and a digital journal for documenting daily farming activities. Built with React Native and Firebase for real-time synchronization and offline capabilities.",
+    "technologies": ["React Native", "Firebase", "Geospatial Mapping", "Data Visualization", "Mobile Development"],
+    "features": [
+      "Dashboard with harvest statistics and charts",
+      "Farm management with digital maps (Geospatial)",
+      "Inventory tracking for tools and materials",
+      "Digital journal for daily activities",
+      "User profile with secure authentication",
+      "Data reporting and analytics",
+      "Offline capabilities"
+    ],
+    "links": {
+      "github": null,
+      "demo": null
+    }
+  }
+]
