@@ -48,7 +48,7 @@ export default function home() {
           <div id="content-title" className="mx-auto">
             <h3 className=" text-justfy font-sans text-8xl font-bold mb-5 max-md:text-6xl max-md:text-center">Hello This Is My Portfolio</h3>
             <h2 className=" text-green-500 text-xs text-center max-md:text-xl">ILHAM TATAYO LIE </h2>
-            <p className=" text-justify">{"Hello! My name is Ilham Tatayo Lie, and I'm passionately interested in pursuing a career as a full-stack developer. I successfully completed the Full Stack Development bootcamp at Harisenin.com, which has fueled my enthusiasm for this field. Currently, I am a dedicated student studying Informatics Engineering at the University of Papua, eager to enhance my skills and knowledge in the realm of technology"}</p>
+            <p className=" text-justify">{"Hello! I'm Ilham Tatayo Lie, a Software Engineer who loves turning complex problems into elegant code. With hands-on experience optimizing enterprise systems at PT Freeport Indonesia, I specialize in Full Stack Development and Cloud Computing. I am currently finishing my degree at the University of Papua and am ready to deliver impactful digital solutions."}</p>
           </div>
           <div id="content-file" className=" mt-12 max-md:flex max-md:justify-center">
             <a target="_blank"href="/file/CV ATS ILHAM TATAYO LIE ~ English 1 Page.pdf" className=" w-40 h-12 border-solid border-2 border-white hover:bg-white hover:text-black hover:border-0 rounded-md text-center flex items-center justify-center"> Resume <FaFileDownload className="ml-2"/></a>

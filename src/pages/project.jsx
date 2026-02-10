@@ -67,16 +67,16 @@ export default function Project() {
 
   return (
     <div className="min-h-screen">
-      <div id="container" className="w-5/6 mx-auto py-10">
-        <h2 className="text-center text-5xl font-bold mb-4 max-md:text-4xl">
+      <div id="container" className="w-5/6 max-md:w-11/12 mx-auto py-10 max-md:py-6">
+        <h2 className="text-center text-5xl font-bold mb-4 max-md:text-3xl max-md:mb-3">
           My <span className="bg-gradient-to-r from-sky-400 to-blue-600 bg-clip-text text-transparent">Projects</span>
         </h2>
-        <p className="text-center text-gray-400 mb-12 max-md:text-sm">
+        <p className="text-center text-gray-400 mb-12 max-md:text-sm max-md:mb-6">
           Explore my latest work and professional projects
         </p>
 
         {/* Projects Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-md:gap-6 max-md:grid-cols-1 max-md:max-w-md max-md:mx-auto">
           {projectsData.map((project) => (
             <div
               key={project.id}
@@ -85,8 +85,8 @@ export default function Project() {
               onMouseLeave={() => setHoveredProject(null)}
               onClick={() => openModal(project)}
             >
-              {/* Shadow Effect */}
-              <div className={`absolute top-4 left-4 w-full h-full rounded-xl -z-10 bg-gradient-to-br ${getCategoryColor(project.category)} opacity-50 transition-all duration-300 group-hover:top-6 group-hover:left-6`}></div>
+              {/* Shadow Effect - Hidden on Mobile */}
+              <div className={`hidden md:block absolute top-4 left-4 w-full h-full rounded-xl -z-10 bg-gradient-to-br ${getCategoryColor(project.category)} opacity-50 transition-all duration-300 group-hover:top-6 group-hover:left-6`}></div>
               
               {/* Card */}
               <div className="relative bg-gray-900 rounded-xl overflow-hidden border border-gray-800 hover:border-gray-600 transition-all duration-300 transform hover:scale-[1.02] h-full">

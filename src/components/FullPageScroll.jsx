@@ -88,6 +88,35 @@ export default function FullPageScroll() {
       }
     };
 
+    // Mobile touch scroll detection
+    const handleTouchScroll = () => {
+      if (isScrolling || window.innerWidth >= 768) return; // Only for mobile
+      
+      const currentSectionElement = sectionRefs.current[currentSection];
+      if (!currentSectionElement) return;
+
+      const { scrollTop, scrollHeight, clientHeight } = currentSectionElement;
+      const isAtBottom = Math.abs(scrollHeight - clientHeight - scrollTop) < 2;
+      const isAtTop = scrollTop < 2;
+
+      // Auto advance to next section when scrolled to bottom
+      if (isAtBottom && currentSection < sections.length - 1) {
+        setIsScrolling(true);
+        setTimeout(() => {
+          setCurrentSection(prev => prev + 1);
+          setTimeout(() => setIsScrolling(false), 800);
+        }, 200);
+      }
+      // Auto go to previous section when scrolled to top
+      else if (isAtTop && currentSection > 0 && scrollTop === 0) {
+        setIsScrolling(true);
+        setTimeout(() => {
+          setCurrentSection(prev => prev - 1);
+          setTimeout(() => setIsScrolling(false), 800);
+        }, 200);
+      }
+    };
+
     const handleKeyDown = (e) => {
       if (isScrolling) return;
       
@@ -107,9 +136,18 @@ export default function FullPageScroll() {
     window.addEventListener("wheel", handleWheel, { passive: false });
     window.addEventListener("keydown", handleKeyDown);
 
+    // Add scroll listener for mobile touch detection
+    const currentSectionElement = sectionRefs.current[currentSection];
+    if (currentSectionElement) {
+      currentSectionElement.addEventListener('scroll', handleTouchScroll, { passive: true });
+    }
+
     return () => {
       window.removeEventListener("wheel", handleWheel);
       window.removeEventListener("keydown", handleKeyDown);
+      if (currentSectionElement) {
+        currentSectionElement.removeEventListener('scroll', handleTouchScroll);
+      }
     };
   }, [currentSection, isScrolling, sections.length]);
 

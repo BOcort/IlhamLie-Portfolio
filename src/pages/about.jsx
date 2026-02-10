@@ -20,9 +20,8 @@ export default function About() {
         <div id="about-content" className="md:grid md:grid-cols-3 gap-5 mb-20">
           <div id="about-text" className="text-xl text-justify font-mono md:col-span-2 max-md:hidden">
             <p className="mb-5">
-              <span className="text-red-500 font-semibold"> Welcome to my profile page! </span> 
-              I am an informatic engineering student who is extremely eager to enter the workforce as a full stack developer. 
-              Pursuing a degree in informatic aligns with my deep interest in creating innovative and impactful information technology solutions.
+              <span className="text-red-500 font-semibold"> My journey as a Software Engineer! </span> 
+              defined by a relentless drive to build robust and efficient systems. Currently a final-year student at the University of Papua, I have already bridged the gap between academic theory and enterprise application through my tenure as a Software Engineering Intern at PT Freeport Indonesia. There, I contributed to engineering full-stack solutions and optimizing workflows using modern cloud architecture.
             </p>
             <p className="mb-5">
               Since high school, I have wholeheartedly delved into the realm of computer science. I actively participated in 
