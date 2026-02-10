@@ -280,6 +280,24 @@ export default function FullPageScroll() {
               <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
             </svg>
           </a>
+
+          {/* Resume/CV */}
+          <a
+            href="/file/CV ATS ILHAM TATAYO LIE ~ English 1 Page.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`group transition-all duration-500 ${
+              currentSection === 3
+                ? 'w-16 h-16 md:w-20 md:h-20 rounded-2xl bg-black text-white hover:bg-white hover:text-black flex items-center justify-center shadow-2xl hover:scale-110'
+                : 'w-12 h-12 max-md:w-10 max-md:h-10 rounded-full bg-black text-white hover:bg-white hover:text-black flex items-center justify-center shadow-lg hover:scale-110'
+            }`}
+          >
+            <svg className={`transition-all duration-500 ${
+              currentSection === 3 ? 'w-8 h-8 md:w-10 md:h-10' : 'w-6 h-6 max-md:w-5 max-md:h-5'
+            }`} fill="currentColor" viewBox="0 0 24 24">
+              <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zM6 20V4h7v5h5v11H6zm2-5h8v2H8v-2zm0-3h8v2H8v-2zm0-3h5v2H8V9z"/>
+            </svg>
+          </a>
         </div>
       </div>
     </div>

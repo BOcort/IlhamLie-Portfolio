@@ -51,7 +51,7 @@ export default function home() {
             <p className=" text-justify">{"Hello! My name is Ilham Tatayo Lie, and I'm passionately interested in pursuing a career as a full-stack developer. I successfully completed the Full Stack Development bootcamp at Harisenin.com, which has fueled my enthusiasm for this field. Currently, I am a dedicated student studying Informatics Engineering at the University of Papua, eager to enhance my skills and knowledge in the realm of technology"}</p>
           </div>
           <div id="content-file" className=" mt-12 max-md:flex max-md:justify-center">
-            <a target="_blank"href="/file/CV ATS ILHAM TATAYO LIE ~ English.pdf" className=" w-40 h-12 border-solid border-2 border-white hover:bg-white hover:text-black hover:border-0 rounded-md text-center flex items-center justify-center"> Resume <FaFileDownload className="ml-2"/></a>
+            <a target="_blank"href="/file/CV ATS ILHAM TATAYO LIE ~ English 1 Page.pdf" className=" w-40 h-12 border-solid border-2 border-white hover:bg-white hover:text-black hover:border-0 rounded-md text-center flex items-center justify-center"> Resume <FaFileDownload className="ml-2"/></a>
           </div>
         </div>
       </div>
